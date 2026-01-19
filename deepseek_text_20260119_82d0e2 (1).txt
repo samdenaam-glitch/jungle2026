@@ -1,0 +1,87 @@
+JUNGLE QUEST 2026 - HTML5 EDITION
+================================
+
+A complete quantum-powered platformer that runs in any modern browser.
+Inspired by classic MS-DOS games like Jungle Book and Rayman.
+
+HOW TO PLAY:
+------------
+
+1. Save all files in the same folder
+2. Open index.html in Chrome/Firefox/Edge
+3. Click "NEW GAME" to start
+4. Use arrow keys or WASD to move and jump
+5. Collect bananas for score, keys to progress
+6. Use quantum abilities with 1, 2, 3 keys
+7. Complete all 4 levels to win!
+
+CONTROLS:
+---------
+
+Keyboard:
+- Arrow Keys / WASD: Move and jump
+- Space: Jump
+- 1: Quantum Scan (reveals collectibles)
+- 2: Time Jump (switch timeline)
+- 3: Quantum Entangle (link collectibles)
+- ESC: Pause game
+- Enter/Space: Menu selection
+
+Mobile/Touch:
+- On-screen buttons appear automatically
+- Touch menu items to select
+
+CHEAT CODES (for testing):
+--------------------------
+- Ctrl+Q: Add 1000 score
+- Ctrl+T: Switch timeline
+- Ctrl+B: Add 10 bananas
+- Ctrl+L: Add 3 lives
+- Ctrl+N: Skip to next level
+- Shift+D: Toggle debug mode
+
+FILES:
+------
+1. index.html       - Main game file
+2. styles.css       - All visual styles
+3. game-engine.js   - Core game engine
+4. physics-engine.js- Physics system
+5. level-data.js    - Level definitions
+6. game-entities.js - All game objects
+7. audio-system.js  - Sound manager
+8. main.js          - Game initialization
+9. manifest.json    - PWA configuration
+10. service-worker.js- Offline support
+11. README.txt      - This file
+
+FEATURES:
+---------
+✅ 4 complete levels with different mechanics
+✅ Quantum abilities (scan, time jump, entangle)
+✅ 3 timelines (1994, 2026, 2048) with different visuals
+✅ Boss battle with multiple phases
+✅ Save/load system
+✅ CRT scanline effect
+✅ Mobile touch controls
+✅ Offline play support
+✅ Particle effects and animations
+✅ Sound effects and music
+
+CREDITS:
+--------
+Developed by: RetroCoders 2026
+Graphics: PixelArt Division
+Sound: Quantum Audio Labs
+Physics: Newton.js Engine
+Special Thanks: MS-DOS Preservation Society
+
+© 2026 Digital Archaeology Labs
+
+TROUBLESHOOTING:
+----------------
+1. If game doesn't load, check browser console (F12)
+2. Make sure all files are in the same folder
+3. Try a different browser if audio doesn't work
+4. On mobile, ensure "Request Desktop Site" is off
+
+ENJOY THE GAME!
