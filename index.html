@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUNGLE QUEST 2026 - HTML5 Platformer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icons/icon-192.png">
+</head>
+<body class="crt">
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="screen">
+        <div class="title">JUNGLE QUEST 2026</div>
+        <div id="loading-text" class="loading-text">Loading Quantum Engine...</div>
+        <div class="loading-bar">
+            <div id="loading-fill" class="loading-fill"></div>
+        </div>
+    </div>
+
+    <!-- Main Menu -->
+    <div id="menu-screen" class="screen" style="display: none;">
+        <div class="title">JUNGLE QUEST 2026</div>
+        <div class="menu">
+            <div class="menu-item" data-action="new-game">NEW GAME</div>
+            <div class="menu-item" data-action="continue">CONTINUE</div>
+            <div class="menu-item" data-action="level-select">LEVEL SELECT</div>
+            <div class="menu-item" data-action="options">OPTIONS</div>
+            <div class="menu-item" data-action="credits">CREDITS</div>
+        </div>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen" class="screen" style="display: none;">
+        <div id="game-container">
+            <canvas id="game-canvas" width="800" height="500"></canvas>
+            
+            <!-- Game HUD -->
+            <div id="hud">
+                <div class="hud-item">SCORE: <span id="score">0</span></div>
+                <div class="hud-item">LIVES: <span id="lives">3</span></div>
+                <div class="hud-item">LEVEL: <span id="level">1</span></div>
+                <div class="hud-item">BANANAS: <span id="bananas">0</span>/50</div>
+                <div class="hud-item">KEYS: <span id="keys">0</span>/5</div>
+                <div class="hud-item">QUANTUM ENERGY:</div>
+                <div class="quantum-bar">
+                    <div id="quantum-energy" class="quantum-fill"></div>
+                </div>
+                <div class="hud-item" id="timeline">TIMELINE: 2026</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Controls -->
+    <div id="mobile-controls">
+        <div class="mobile-btn" data-key="ArrowLeft">←</div>
+        <div class="mobile-btn" data-key="ArrowRight">→</div>
+        <div class="mobile-btn" data-key="ArrowUp">↑</div>
+        <div class="mobile-btn" data-key="Space">␣</div>
+        <div class="mobile-btn" data-key="Digit1">1</div>
+        <div class="mobile-btn" data-key="Digit2">2</div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="game-engine.js"></script>
+    <script src="physics-engine.js"></script>
+    <script src="level-data.js"></script>
+    <script src="game-entities.js"></script>
+    <script src="audio-system.js"></script>
+    <script src="main.js"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js');
+        }
+    </script>
+</body>
+</html>

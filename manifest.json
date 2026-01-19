@@ -1,0 +1,27 @@
+{
+  "name": "Jungle Quest 2026",
+  "short_name": "JungleQuest",
+  "description": "A quantum-powered retro platformer across multiple timelines",
+  "start_url": ".",
+  "display": "fullscreen",
+  "background_color": "#000000",
+  "theme_color": "#00ff00",
+  "orientation": "landscape",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["game", "platformer", "retro"],
+  "lang": "en",
+  "dir": "ltr"
+}
